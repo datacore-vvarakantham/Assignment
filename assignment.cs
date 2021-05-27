@@ -91,10 +91,8 @@ public class DAO
 }
 class SynchronizationDemo
 {
-    //public Mutex _handleTwo = new Mutex(true);
     static void Main()
     {
-        //Mutex _handleThree = new Mutex(true);
         DAO singleton = DAO.Instance;
         new Thread(singleton.Create).Start();
         new Thread(singleton.Delete).Start();
